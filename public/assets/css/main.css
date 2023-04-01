@@ -1,0 +1,41 @@
+@import url("/assets/css/keyframes.css");
+@import url("/assets/css/fonts.css");
+
+h1, h2, h3 {
+    font-family: 'Cookie';
+}
+
+h4, h5, h6 {
+    font-family: 'Alkatra';
+}
+
+a {
+    text-decoration: none;
+    color: #ED6A5A;
+    transition-duration: 0.3s;
+}
+
+a:hover {
+    color: #75180C;
+}
+
+.snowflake {
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    animation: snowfall var(--duration) infinite linear;
+}
+
+@keyframes snowfall {
+    from {
+        top: var(--init-top);
+        left: var(--init-left);
+    }
+
+    to {
+        top: 110%;
+        left: var(--end-left);
+    }
+}

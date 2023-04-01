@@ -1,0 +1,20 @@
+{
+    "name": "exan/landviz_nl",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Exan\\Landviz\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Exanlv",
+            "email": "exan@landviz.nl"
+        }
+    ],
+    "require": {
+        "notback/notback": "dev-main@dev",
+        "slim/slim": "^4.11",
+        "slim/psr7": "^1.6"
+    }
+}
