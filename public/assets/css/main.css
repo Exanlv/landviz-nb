@@ -41,7 +41,7 @@ a:hover {
 }
 
 #header {
-    background: url("/assets/img/header-bg.gif");
+    background: url("/public/assets/img/header-bg.gif");
     animation: rick;
     animation-duration: 4140s;
 }
@@ -54,7 +54,7 @@ a:hover {
         background: linear-gradient(0deg, #9BC1BC, #E6EBE0);
     }
     to {
-        background: url("/assets/img/header-bg.gif");
+        background: url("/public/assets/img/header-bg.gif");
     }
 }
 
