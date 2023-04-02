@@ -11,7 +11,7 @@ class ContentContainer
         return Block(
             Block(
                 ...$elements
-            )->class('container px-5')
-        )->class('px-5 mb-5');
+            )->class('container px-md-5')
+        )->class('px-md-5 mb-5');
     }
 }
