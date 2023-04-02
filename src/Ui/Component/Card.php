@@ -29,13 +29,9 @@ class Card
                     ->fontSize('0.7rem')
             )
                 ->height('100%')
-                ->background('rgba(255, 255, 255, 0.3)')
-                ->margin('0.2rem')
-                ->borderRadius('0.5rem')
-                ->padding('1rem')
-                ->boxShadow('0.8rem 0.8rem 0.8rem rgba(155, 193, 188, 0.2)')
                 ->maxWidth('27rem')
-                ->margin('auto')
+                ->margin('auto !important')
+                ->class('lv-card')
         );
     }
 }

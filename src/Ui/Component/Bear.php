@@ -1,10 +1,16 @@
+<?php
+
+$colors = \Exan\Landviz\Config::get('hat-colors');
+
+$color = $colors[array_rand($colors)];
+
+?>
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   style="max-width: 100%; max-height: 300px"
    version="1.1"
-   id="svg2"
+   id="header-image"
    width="3285.8933"
    height="3278.5601"
    viewBox="0 0 3285.8933 3278.5601"
@@ -355,7 +361,7 @@
          id="path164" />
       <path
          d="m 11555.1,15592.2 -2840.58,520 c -42.58,-55.8 -83.9,-116.1 -145.29,-150.2 -4.64,-2.6 -9.46,-4.7 -14.23,-6.9 l 3056.2,-564.7 -56.1,201.8"
-         style="fill:#c12127;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="fill:<?= $color ?>;fill-opacity:1;fill-rule:nonzero;stroke:none"
          id="path166" />
       <path
          d="m 9463.83,14566.2 c 0,-61.4 -49.76,-111.1 -111.15,-111.1 -61.39,0 -111.15,49.7 -111.15,111.1 0,61.4 49.76,111.2 111.15,111.2 61.39,0 111.15,-49.8 111.15,-111.2"

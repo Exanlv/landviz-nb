@@ -9,7 +9,7 @@ use Exan\Landviz\Ui\Component\HighlightedProjects;
 
 class HomePage
 {
-    public static function new()
+    public static function new(array $projects)
     {
         return BasePage::new(
             ContentContainer::new(
@@ -27,17 +27,16 @@ class HomePage
                         ->href('https://github.com/Exanlv')
                         ->target('_blank')
                 )
-            ),
+            )->class('text-center'),
 
             ContentContainer::new(
-                HighlightedProjects::new()
-            ),
+                HighlightedProjects::new($projects)
+            )->class('text-center'),
 
             ContentContainer::new(
                 Hyperlink('View all')
                     ->href('/projects')
-                    ->target('_blank')
-            )->marginTop('7rem'),
+            )->marginTop('7rem')->class('text-center'),
         );
     }
 }
