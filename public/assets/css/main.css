@@ -1,5 +1,5 @@
-@import url("/assets/css/keyframes.css");
-@import url("/assets/css/fonts.css");
+@import url("/public/assets/css/keyframes.css");
+@import url("/public/assets/css/fonts.css");
 
 h1, h2, h3 {
     font-family: 'Cookie';

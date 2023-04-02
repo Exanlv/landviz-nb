@@ -11,7 +11,7 @@ class Nav
         return Block(
             Hyperlink(
                 Image()
-                    ->src('/assets/img/logo-gray.svg')
+                    ->src('/public/assets/img/logo-gray.svg')
                     ->height('32')
                     ->class('me-3'),
                 Text('Landviz.nl')
