@@ -12,6 +12,7 @@ class ProjectCategory
                 fn (array $project) => ResponsiveCard::new(
                     $project['name'],
                     $project['image'],
+                    $project['url'],
                     $project['description'],
                     'Uses ' . implode(', ', $project['tech'])
                 ),
