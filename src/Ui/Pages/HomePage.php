@@ -35,7 +35,8 @@ class HomePage
             ContentContainer::new(
                 Hyperlink('View all')
                     ->href('/projects')
-            )->marginTop('7rem')->class('text-center'),
+                    ->class('btn btn-lv')
+            )->marginTop('3rem')->class('text-center'),
         );
     }
 }

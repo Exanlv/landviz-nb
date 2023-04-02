@@ -122,3 +122,14 @@ a:hover {
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.05);
 }
+
+.btn-lv {
+    background-color: #ED6A5A;
+    transition-duration: 0.3s;
+    color: white
+}
+
+.btn-lv:hover {
+    background-color: #75180C;
+    color: white
+}
