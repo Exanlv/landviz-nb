@@ -113,10 +113,10 @@ a:hover {
 
 .lv-card-img:hover {
     transform: scale(1.05);
-    transition-duration: 0.3s;
 }
 
 .lv-card-img {
+    transition-duration: 0.3s;
     max-width: 100%;
     max-height: 12rem;
     border-radius: 1rem;
