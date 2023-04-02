@@ -11,7 +11,7 @@ class BasePage
     {
         $links = [
             '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">',
-            '<link href="/assets/css/main.css" rel="stylesheet">',
+            '<link href="public/assets/css/main.css" rel="stylesheet">',
         ];
 
         return PageContent(
@@ -26,7 +26,7 @@ class BasePage
                     ...$elements
                 )->class('container-lg py-4'),
                 Script()->src('https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js'),
-                Script()->src('/assets/js/main.js')->defer(),
+                Script()->src('public/assets/js/main.js')->defer(),
             )->background('#eee')
         );
     }
