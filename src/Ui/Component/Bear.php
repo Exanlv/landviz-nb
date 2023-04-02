@@ -1,5 +1,7 @@
 <?php
 
+// phpcs:disable
+
 $colors = \Exan\Landviz\Config::get('hat-colors');
 
 $color = $colors[array_rand($colors)];

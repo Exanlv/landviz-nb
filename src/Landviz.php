@@ -10,7 +10,7 @@ use Slim\Factory\AppFactory;
 class Landviz
 {
     private App $app;
-    
+
     public function __construct()
     {
         $this->app = AppFactory::create();

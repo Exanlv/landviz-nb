@@ -9,7 +9,12 @@ class ProjectCategory
         return [
             H3($category['name'])->class('text-center'),
             ...array_map(
-                fn (array $project) => ResponsiveCard::new($project['name'], $project['image'], $project['description'], 'Uses ' . implode(', ', $project['tech'])),
+                fn (array $project) => ResponsiveCard::new(
+                    $project['name'],
+                    $project['image'],
+                    $project['description'],
+                    'Uses ' . implode(', ', $project['tech'])
+                ),
                 $category['projects']
             )
         ];

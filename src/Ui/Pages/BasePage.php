@@ -9,11 +9,15 @@ class BasePage
 {
     public static function new(...$elements)
     {
+        $links = [
+            '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">',
+            '<link href="/assets/css/main.css" rel="stylesheet">',
+        ];
+
         return PageContent(
             Head(
                 Title('Landviz'),
-                '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">',
-                '<link href="/assets/css/main.css" rel="stylesheet">',
+                ...$links,
             ),
             Body(
                 Block(

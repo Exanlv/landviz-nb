@@ -6,6 +6,7 @@ use Exan\Landviz\Config;
 use Exan\Landviz\Ui\Component\Category;
 use Exan\Landviz\Ui\Component\ContentContainer;
 use Exan\Landviz\Ui\Component\HighlightedProjects;
+use Exan\Landviz\Ui\Component\ProjectCategory;
 
 class HomePage
 {
@@ -28,11 +29,9 @@ class HomePage
                         ->target('_blank')
                 )
             )->class('text-center'),
-
             ContentContainer::new(
-                HighlightedProjects::new($projects)
+                ProjectCategory::new(['name' => 'Highlighted Projects', 'projects' => $projects])
             )->class('text-center'),
-
             ContentContainer::new(
                 Hyperlink('View all')
                     ->href('/projects')
