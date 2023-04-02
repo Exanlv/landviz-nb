@@ -1,5 +1,5 @@
 start:
-	php -S localhost:8080 -t public public/index.php
+	php -S localhost:8080 -t ./ public/index.php
 
 cs:
 	./vendor/bin/phpcs --standard=PSR12 src
