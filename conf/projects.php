@@ -21,7 +21,7 @@ return [
         'name' => 'Landviz.nl',
         'tech' => ['PHP', 'Slim', 'Notback'],
         'image' => '/public/assets/img/projects/landviz_nl.png',
-        'description' => 'This site is made using Slim framework. It also uses Notback, which is a small front-end framework made in PHP.',
+        'description' => 'This site is made using Slim framework and Notback - a small front-end framework made in PHP. It also has a few easter eggs you can try to find.',
         'url' => 'https://github.com/Exanlv/landviz-nb',
         'highlighted' => true,
     ],

@@ -17,11 +17,11 @@ class ResponsiveCard
                 Block(Text($description)),
                 Block(
                     Text($footer),
-                    Hyperlink('View')->href($projectUrl)->target('_blank')->float('right'),
+                    Hyperlink('View source')->href($projectUrl)->target('_blank')->float('right'),
                 )
                     ->class('text-muted')
                     ->marginTop('4rem')
-                    ->fontSize('0.7rem'),
+                    ->fontSize('0.8rem'),
             )->class('col-xl-9'),
         )->class('row lv-card')->textAlign('center !important')->textAlign(['XL'], 'left !important');
     }
