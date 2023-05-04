@@ -2,10 +2,8 @@
 
 namespace Exan\Landviz\Ui\Pages;
 
-use Exan\Landviz\Config;
-use Exan\Landviz\Ui\Component\Category;
+use Exan\Landviz\Ui\Component\Button;
 use Exan\Landviz\Ui\Component\ContentContainer;
-use Exan\Landviz\Ui\Component\HighlightedProjects;
 use Exan\Landviz\Ui\Component\ProjectCategory;
 
 class HomePage
@@ -33,9 +31,7 @@ class HomePage
                 ProjectCategory::new(['name' => 'Highlighted Projects', 'projects' => $projects])
             )->class('text-center'),
             ContentContainer::new(
-                Hyperlink('View all')
-                    ->href('/projects')
-                    ->class('btn btn-lv')
+                Button::new('View all', '/projects'),
             )->marginTop('3rem')->class('text-center'),
         );
     }

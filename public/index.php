@@ -1,6 +1,7 @@
 <?php
 
 use Exan\Landviz\Landviz;
+use Slim\Factory\AppFactory;
 
 require __DIR__ . '/../vendor/autoload.php';
 
@@ -12,4 +13,6 @@ if (
     return false;
 }
 
-new Landviz();
+new Landviz(
+    AppFactory::create()
+);

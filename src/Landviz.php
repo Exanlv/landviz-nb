@@ -9,16 +9,26 @@ use Slim\Factory\AppFactory;
 
 class Landviz
 {
-    private App $app;
-
-    public function __construct()
+    public function __construct(private App $app)
     {
         $this->app = AppFactory::create();
+
+        $this->app->addRoutingMiddleware();
+
+        $this->registerErrorHandling();
 
         $this->configureNotBack();
         $this->registerRoutes();
 
         $this->app->run();
+    }
+
+    private function registerErrorHandling()
+    {
+        $this->app->addErrorMiddleware(false, false, false)
+            ->getDefaultErrorHandler()
+            ->registerErrorRenderer('text/html', ErrorRenderer::class);
+
     }
 
     public function registerRoutes()

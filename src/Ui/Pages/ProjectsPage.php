@@ -2,6 +2,7 @@
 
 namespace Exan\Landviz\Ui\Pages;
 
+use Exan\Landviz\Ui\Component\Button;
 use Exan\Landviz\Ui\Component\ContentContainer;
 use Exan\Landviz\Ui\Component\ProjectCategory;
 
@@ -16,9 +17,7 @@ class ProjectsPage
                 );
             }, $projects),
             ContentContainer::new(
-                Hyperlink('Back')
-                    ->href('/')
-                    ->class('btn btn-lv')
+                Button::new('Back', '/'),
             )->marginTop('3rem')->class('text-center')
         );
     }
